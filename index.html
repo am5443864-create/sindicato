@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindicato Nacional del Magisterio | Por la Excelencia Educativa</title>
+    <meta name="description" content="Portal oficial del Sindicato del Magisterio. Noticias, trámites, leyes y derechos para los docentes.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>SNM</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#tramites">Trámites</a></li>
+                <li><a href="#leyes">Leyes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#contacto" class="btn btn-primary" style="padding: 10px 20px;">Afiliarse</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Unidos por el <span>Futuro</span> de la Educación</h1>
+                <p>Representamos y defendemos los derechos de los docentes con transparencia, compromiso y excelencia profesional en todo el país.</p>
+                <div class="cta-buttons">
+                    <a href="#tramites" class="btn btn-primary">Iniciar Trámite</a>
+                    <a href="#noticias" class="btn btn-outline">Ver Noticias</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero.png" alt="Docentes colaborando">
+            </div>
+        </section>
+
+        <!-- Noticias Section -->
+        <section id="noticias">
+            <div class="section-header">
+                <h2>Últimas Noticias</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="noticias-grid">
+                <article class="card">
+                    <div class="card-img">
+                        <img src="assets/news.png" alt="Asamblea Sindical">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Acuerdos</span>
+                        <h3>Nueva resolución sobre escalafón docente 2026</h3>
+                        <p>Se han definido los nuevos lineamientos para el ascenso de grado y nivelación salarial para el próximo ciclo escolar.</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">Leer más</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb28f74b671?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Capacitación">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Capacitación</span>
+                        <h3>Seminario de Innovación Tecnológica en el Aula</h3>
+                        <p>Inscripciones abiertas para el taller gratuito sobre herramientas digitales para el aprendizaje híbrido.</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">Leer más</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bienestar">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Bienestar</span>
+                        <h3>Convenios de salud para agremiados</h3>
+                        <p>Ampliamos nuestra red de beneficios médicos con nuevas clínicas especializadas en atención docente.</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">Leer más</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Eventos Section -->
+        <section id="eventos" style="background-color: #fffaf5;">
+            <div class="section-header">
+                <h2>Agenda Gremial</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="eventos-container">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="filterEvents('proximos')">Próximos Eventos</button>
+                    <button class="tab-btn" onclick="filterEvents('pasados')">Eventos Pasados</button>
+                </div>
+                <div id="events-list" class="events-list">
+                    <!-- Eventos se cargan aquí vía JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Trámites Section -->
+        <section id="tramites">
+            <div class="section-header">
+                <h2>Guía de Trámites</h2>
+                <p>Información clara y pasos a seguir para tus gestiones oficiales.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="tramites-grid">
+                <div class="tramite-card">
+                    <h3><i class="fas fa-file-invoice" style="color: var(--primary); margin-right: 15px;"></i>Solicitud de Permisos</h3>
+                    <div class="steps-container" style="margin-top: 30px;">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-info">
+                                <h5>Descarga el Formulario</h5>
+                                <p>Obtén el formato oficial F-102 desde nuestra zona de descargas.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-info">
+                                <h5>Firma del Director</h5>
+                                <p>Solicita la validación y firma de la autoridad inmediata en tu centro educativo.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-info">
+                                <h5>Presentación en Oficina</h5>
+                                <p>Acude a las oficinas centrales con la documentación completa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="docs-list">
+                        <h6>Documentación Requerida:</h6>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Identificación oficial vigente</li>
+                            <li><i class="fas fa-check"></i> Formulario F-102 firmado</li>
+                            <li><i class="fas fa-check"></i> Último comprobante de pago</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tramite-card">
+                    <h3><i class="fas fa-hand-holding-medical" style="color: var(--primary); margin-right: 15px;"></i>Trámite de Jubilación</h3>
+                    <div class="steps-container" style="margin-top: 30px;">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-info">
+                                <h5>Cita Previa</h5>
+                                <p>Programa una asesoría personalizada con nuestro departamento legal.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-info">
+                                <h5>Hoja de Servicios</h5>
+                                <p>Solicita el desglose oficial de años laborados en la Secretaría de Educación.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-info">
+                                <h5>Radicación</h5>
+                                <p>Ingresa el expediente completo para el cálculo de tu pensión.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="docs-list">
+                        <h6>Documentación Requerida:</h6>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acta de nacimiento certificada</li>
+                            <li><i class="fas fa-check"></i> Constancia de años de servicio</li>
+                            <li><i class="fas fa-check"></i> Carta de no adeudo sindical</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leyes Section -->
+        <section id="leyes" style="padding: 0; display: flex; align-items: center; justify-content: center; background: #fdfdfd;">
+            <div class="laws-container">
+                <div class="laws-text">
+                    <h2>Tus Derechos, <span>Nuestra Prioridad</span></h2>
+                    <p>Conoce el marco legal que protege tu labor docente. La información es la base de una defensa justa.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary">Descargar Ley General</a>
+                    </div>
+                </div>
+                <div class="laws-items">
+                    <div class="law-item">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h4 style="color: var(--primary);">Ley de Carrera Docente</h4>
+                                <p style="font-size: 0.85rem; color: #aaa;">Artículos sobre estabilidad laboral y ascensos.</p>
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="law-item">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h4 style="color: var(--primary);">Estatuto del Magisterio</h4>
+                                <p style="font-size: 0.85rem; color: #aaa;">Derechos y obligaciones del personal docente.</p>
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="law-item">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h4 style="color: var(--primary);">Reglamento de Prestaciones</h4>
+                                <p style="font-size: 0.85rem; color: #aaa;">Seguridad social, bonos y compensaciones.</p>
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto">
+            <div class="section-header">
+                <h2>Contacto y Ubicación</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Estamos para escucharte</h3>
+                    <p style="margin-bottom: 30px; color: var(--text-muted);">Visítanos en nuestras oficinas centrales o contáctanos por nuestros canales digitales.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Dirección:</strong>
+                                <p>Av. Reforma Educativa #450, Col. Centro, CP 06010</p>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Teléfono:</strong>
+                                <p>+52 (55) 1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong>
+                                <p>contacto@sindicatomagisterio.org</p>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Horario:</strong>
+                                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <img src="assets/office.png" alt="Ubicación Oficina">
+                    <div style="position: absolute; bottom: 20px; left: 20px; background: white; padding: 15px; border-radius: 10px; box-shadow: var(--shadow);">
+                        <span style="color: var(--primary); font-weight: 700;">Ver en Google Maps</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-graduation-cap"></i> SNM
+            </div>
+            <div class="social-links">
+                <a href="#" style="color: var(--primary); font-size: 1.5rem; margin-left: 20px;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: var(--primary); font-size: 1.5rem; margin-left: 20px;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color: var(--primary); font-size: 1.5rem; margin-left: 20px;"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Sindicato Nacional del Magisterio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/525512345678" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
